@@ -12,6 +12,8 @@
 		2B79908C1CA89C1500E40314 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B79908A1CA89C1500E40314 /* Main.storyboard */; };
 		2B79908E1CA89C1500E40314 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B79908D1CA89C1500E40314 /* Assets.xcassets */; };
 		2B7990911CA89C1500E40314 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B79908F1CA89C1500E40314 /* LaunchScreen.storyboard */; };
+		2B7990991CA8A86100E40314 /* AboutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7990981CA8A86100E40314 /* AboutController.swift */; };
+		2BF732781CA9FAE9009D0757 /* PhotosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF732771CA9FAE9009D0757 /* PhotosController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		2B79908D1CA89C1500E40314 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B7990901CA89C1500E40314 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B7990921CA89C1500E40314 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B7990981CA8A86100E40314 /* AboutController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutController.swift; sourceTree = "<group>"; };
+		2BF732771CA9FAE9009D0757 /* PhotosController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,40 @@
 		2B7990851CA89C1500E40314 /* city-of-dublin */ = {
 			isa = PBXGroup;
 			children = (
+				2B79909C1CA8A87D00E40314 /* Controller */,
+				2B79909B1CA8A87600E40314 /* View */,
+				2B79909A1CA8A86E00E40314 /* Model */,
 				2B7990861CA89C1500E40314 /* AppDelegate.swift */,
-				2B7990881CA89C1500E40314 /* ViewController.swift */,
 				2B79908A1CA89C1500E40314 /* Main.storyboard */,
 				2B79908D1CA89C1500E40314 /* Assets.xcassets */,
 				2B79908F1CA89C1500E40314 /* LaunchScreen.storyboard */,
 				2B7990921CA89C1500E40314 /* Info.plist */,
 			);
 			path = "city-of-dublin";
+			sourceTree = "<group>";
+		};
+		2B79909A1CA8A86E00E40314 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		2B79909B1CA8A87600E40314 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		2B79909C1CA8A87D00E40314 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2B7990881CA89C1500E40314 /* ViewController.swift */,
+				2B7990981CA8A86100E40314 /* AboutController.swift */,
+				2BF732771CA9FAE9009D0757 /* PhotosController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +167,8 @@
 			files = (
 				2B7990891CA89C1500E40314 /* ViewController.swift in Sources */,
 				2B7990871CA89C1500E40314 /* AppDelegate.swift in Sources */,
+				2BF732781CA9FAE9009D0757 /* PhotosController.swift in Sources */,
+				2B7990991CA8A86100E40314 /* AboutController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +285,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jamesalandyer.city-of-dublin";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -264,6 +297,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jamesalandyer.city-of-dublin";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -286,6 +320,7 @@
 				2B7990971CA89C1500E40314 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
